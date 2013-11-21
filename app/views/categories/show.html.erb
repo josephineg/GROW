@@ -1,0 +1,7 @@
+<h1><%= @category.name %></h1>
+
+<ul>
+  <% @category.initiative.each do |initiative| %>
+     <li><%= link_to initiative.name, initiative_path(initiative) %></li>
+  <% end %>
+</ul>
